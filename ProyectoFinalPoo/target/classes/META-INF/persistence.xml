@@ -8,7 +8,7 @@ archivo-->
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 
-  <persistence-unit name="eventos"> <!-- La unidad de persistencia que se gestionará se
+  <persistence-unit name="persistencia"> <!-- La unidad de persistencia que se gestionará se
 denominará biblioteca, básicamente es también el nombre de la BD-->
 
 <class>ar.edu.unju.fi.aplicacion.modelo.dominio.Cliente</class>
@@ -27,7 +27,7 @@ denominará biblioteca, básicamente es también el nombre de la BD-->
         <!-- Driver JDBC para que Java pueda conectarse a H2-->
         <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
         <!-- Ubicación de la base de daos y la forma de acceso. Es único para para BD-->
-        <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/Downloads/prueba2" />
+        <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/persistencia" />
         <!-- credenciales de acceso a la base de datos-->
         <property name="javax.persistence.jdbc.user" value="sa" />
         <property name="javax.persistence.jdbc.password" value="" />
