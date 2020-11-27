@@ -19,12 +19,76 @@
   </properties>
 
   <dependencies>
+     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.7.0</version>
       <scope>test</scope>
     </dependency>
+
+         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner -->
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-runner</artifactId>
+      <version>1.7.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!--Fundamental...esta es la dependencia de Hibernate (una implmentación de JPA-->
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.4.22.Final</version>
+    </dependency>
+
+       <!--Fundamental.. para no atarnos exclusivamente a Hibernate, usamos la biblioteca
+        de Java para manejar JPA. La agregamos porque JSE no la posee (JEE si) -->
+    <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>
+
+
+      <!-- El entity manager permite establecer un puente entre hibernate y el persistence
+         api de Java. Además permitira realizar los crud y consultas a la BD-->
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.4.22.Final</version>
+    </dependency>
+
+
+    <!-- Esta dependencia DESCARGA la base de datos H2-->
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+   <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.200</version>
+      <scope>test</scope>
+    </dependency>
+    
   </dependencies>
 
   <build>
